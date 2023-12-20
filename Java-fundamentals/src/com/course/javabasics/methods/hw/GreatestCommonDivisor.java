@@ -17,7 +17,11 @@ public class GreatestCommonDivisor {
 	}
 	
 	public static int gcdRecursive(int firstNumber, int secondNumber) {
-		<write your code here>
+		if (secondNumber == 0) {
+			return Math.abs(firstNumber);
+		} else {
+			return gcdRecursive(secondNumber, firstNumber % secondNumber);
+		}
 		
 	}
 
