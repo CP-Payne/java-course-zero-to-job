@@ -22,13 +22,16 @@ public class Demo {
 		lollipop.setSugarWeight(0.2);
 		
 		Present present = new Present();
-		present.addSweet(candy);
-		present.addSweet(cookie);
-		present.addSweet(lollipop);
-		
+//		present.addSweet(candy);
+//		
+//		
+//		present.addSweet(cookie);
+//		present.addSweet(lollipop);
+		present.addSweet(null);
+
 		Sweet[] filteredSweets = present.filterSweetsBySugarRange(0, 0.20);
 		System.out.println(Arrays.toString(filteredSweets));
-	
+
 		System.out.println("Total weight of the present: " + present.calculateTotalWeight());
 
 	}

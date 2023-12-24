@@ -23,6 +23,10 @@ public abstract class Sweet {
 	public void setSugarWeight(double sugarWeight) {
 		this.sugarWeight = sugarWeight;
 	}
+	@Override
+	public String toString() {
+		return "Sweet [name=" + name + ", weight=" + weight + ", sugarWeight=" + sugarWeight + "]";
+	}
 	
 	
 
